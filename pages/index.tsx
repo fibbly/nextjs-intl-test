@@ -16,40 +16,37 @@ export default function Index() {
 			</Head>
 
 			<main className={styles.main}>
-				<h1 className={styles.title}>{t("welcome")}</h1>
+				<h1 className={styles.title}>{t("title")}</h1>
 
 				<p className={styles.description}>
-					Get started by editing{" "}
-					<code className={styles.code}>pages/index.js</code>
+					{t("subtitle")} <code className={styles.code}>pages/index.js</code>
 				</p>
 
 				<div className={styles.grid}>
 					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h2>Documentation &rarr;</h2>
-						<p>Find in-depth information about Next.js features and API.</p>
+						<h2>{t("grid.documentation.title")} &rarr;</h2>
+						<p>{t("grid.documentation.description")}</p>
 					</a>
 
 					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h2>Learn &rarr;</h2>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
+						<h2>{t("grid.learn.title")} &rarr;</h2>
+						<p>{t("grid.learn.description")}</p>
 					</a>
 
 					<a
 						href="https://github.com/vercel/next.js/tree/master/examples"
 						className={styles.card}
 					>
-						<h2>Examples &rarr;</h2>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
+						<h2>{t("grid.examples.title")} &rarr;</h2>
+						<p>{t("grid.examples.description")}</p>
 					</a>
 
 					<a
 						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
 						className={styles.card}
 					>
-						<h2>Deploy &rarr;</h2>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</p>
+						<h2>{t("grid.deploy.title")} &rarr;</h2>
+						<p>{t("grid.deploy.description")}</p>
 					</a>
 				</div>
 			</main>

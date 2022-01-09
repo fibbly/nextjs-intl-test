@@ -1,5 +1,24 @@
 {
   "index": {
-    "welcome": "Welcome to Next.js"
+    "title": "Welcome to Next.js",
+    "subtitle": "Get started by editing",
+    "grid": {
+      "documentation": {
+        "title": "Documentation",
+        "description": "Find in-depth information about Next.js features and API."
+      },
+      "learn": {
+        "title": "Learn",
+        "description": "Learn about Next.js in an interactive course with quizzes!"
+      },
+      "examples": {
+        "title": "Examples",
+        "description": "Discover and deploy boilerplate example Next.js projects."
+      },
+      "deploy": {
+        "title": "Deploy",
+        "description": "Instantly deploy your Next.js site to a public URL with Vercel."
+      }
+    }
   }
 }
