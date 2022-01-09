@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { GetStaticPropsContext } from "next";
 import { useTranslations } from "next-intl";
 
-export default function Home() {
-	const t = useTranslations("home");
+export default function Index() {
+	const t = useTranslations("index");
 
 	return (
 		<div className={styles.container}>
@@ -69,10 +70,10 @@ export default function Home() {
 	);
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
 	return {
 		props: {
-			messages: require(`../lang/${locale}.json`),
+			messages: (await import(`../lang/${locale}.json`)).default,
 		},
 	};
 }
